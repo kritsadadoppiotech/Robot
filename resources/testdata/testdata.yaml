@@ -1,0 +1,17 @@
+tc01:
+  #email:  k.s@doppiotech.com
+  email:  xcx@df.com
+  password: P@ssw0rd
+  confirmpassword:  P@ssw0rd
+  search: Phone
+  product: Aoppee phone
+  name: Test
+  surname: TT
+  address: 123 to 456
+  phone: 0800000000
+
+CreditCard:
+  cardnumber: 4111111111111111
+  expdate: 12/2026
+  cvc: 123
+  cardowner: Test
