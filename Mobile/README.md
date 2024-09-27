@@ -1,3 +1,11 @@
+# Robot
+Prepare Data : At ./testdata/testdata.yaml
+Run command : robot -d ./Mobile/result -v platform:android ./Mobile/testcases/tc-01.robot
+
+
+
+
+----------------------------------------------- EX -----------------------------------------
 *** Settings ***
 Library     AppiumLibrary
 

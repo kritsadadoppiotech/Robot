@@ -1,7 +1,7 @@
 *** Variables ***
 ${home_locator.btn_home}    //h2[@class='typo']
-${home_locator.btn_user}    //*[@id="app"]/section/header/ul/div/div[2]/div[2]/span
-${home_locator.from_login}    //*[@id="app"]/section/div/div
+${home_locator.btn_user}    //span[@aria-label='user']
+${home_locator.from_login}    //div[@class='form-login']
 
 ${home_locator.txt_search}    //span[span[@class='ant-input-wrapper ant-input-group css-eq3tly']]//input
 ${home_locator.btn_search}    //span[span[@class='ant-input-group-addon']]//button
