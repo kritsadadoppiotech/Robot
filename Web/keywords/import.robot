@@ -1,24 +1,24 @@
 *** Settings ***
 Library		SeleniumLibrary
 
-Variables   ../resources/testdata/testdata.yaml
-Variables   ../resources/setting/${env}/setting.yaml
+Variables   ${CURDIR}/../resources/testdata/testdata.yaml
+Variables   ${CURDIR}/../resources/setting/${env}/setting.yaml
 
-Resource    common.robot
-Resource    ./pages/home_page.robot
-Resource    ./pages/login_page.robot
-Resource    ./pages/register_page.robot
-Resource    ./pages/cart_page.robot
-Resource    ./pages/payment_page.robot
+Resource    ${CURDIR}/common.robot
+Resource    ${CURDIR}/./pages/home_page.robot
+Resource    ${CURDIR}/./pages/login_page.robot
+Resource    ${CURDIR}/./pages/register_page.robot
+Resource    ${CURDIR}/./pages/cart_page.robot
+Resource    ${CURDIR}/./pages/payment_page.robot
 
-Resource    ./features/home_features.robot
-Resource    ./features/login_features.robot
-Resource    ./features/register_features.robot
-Resource    ./features/cart_features.robot
-Resource    ./features/payment_features.robot
+Resource    ${CURDIR}/./features/home_features.robot
+Resource    ${CURDIR}/./features/login_features.robot
+Resource    ${CURDIR}/./features/register_features.robot
+Resource    ${CURDIR}/./features/cart_features.robot
+Resource    ${CURDIR}/./features/payment_features.robot
 
-Resource    ./locators/home_locator.robot
-Resource    ./locators/login_locator.robot
-Resource    ./locators/register_locator.robot
-Resource    ./locators/cart_locator.robot
-Resource    ./locators/payment_locator.robot
+Resource    ${CURDIR}/./locators/home_locator.robot
+Resource    ${CURDIR}/./locators/login_locator.robot
+Resource    ${CURDIR}/./locators/register_locator.robot
+Resource    ${CURDIR}/./locators/cart_locator.robot
+Resource    ${CURDIR}/./locators/payment_locator.robot

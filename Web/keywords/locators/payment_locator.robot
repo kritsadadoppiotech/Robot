@@ -16,4 +16,4 @@ ${payment_locator.btn_ok_payment_page}       //button[@type='button']
 
 ${payment_locator.page_payment_success}      //div[@class='success-display']
 ${payment_locator.txt_status}      //div[@class='success-title']
-${payment_locator.btn_payment_success}      //button[@class='css-eq3tly ant-btn ant-btn-link']//span
+${payment_locator.btn_payment_complete}      //button[@class='css-eq3tly ant-btn ant-btn-link']//span
