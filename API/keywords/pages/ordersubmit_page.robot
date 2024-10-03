@@ -21,6 +21,7 @@ Create Order Data With User
     RETURN    ${order_data}
 
 Create Order Data With json Order Submit
+
     ${order_data}=    JSONLibrary.Load JSON From File     ${CURDIR}/../../resources/testdata/json/order_submit.json
     ${order_data}=    JSONLibrary.Update Value To Json    ${order_data}    $.user_id    ${user_id}
     ${order_data}=    JSONLibrary.Update Value To Json    ${order_data}    $.first_name    ${user_login.first_name}
