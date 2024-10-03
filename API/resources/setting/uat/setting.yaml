@@ -1,4 +1,13 @@
-doppeeSession: https://training-platform.doppio-tech.com/api
+# doppeeSession: https://training-platform.doppio-tech.com/api
+
+# url:
+#   login: login/
+#   search: product/search
+#   order_submit: order_api/order/submit
+
+doppeeSession: https://training-platform.doppio-tech.com
 
 url:
-  login: login/
+  login: api/login/
+  search: api/product/search
+  order_submit: order_api/order/submit

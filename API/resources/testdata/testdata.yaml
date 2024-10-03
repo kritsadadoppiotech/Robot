@@ -1,3 +1,32 @@
-user_login:
-  username: kritsada.s@doppiotech.com        
+TC01:
+  username: xcx@df.com      
   password: P@ssw0rd
+  first_name: Doppee
+  last_name: Tech
+  phone: "0123456789"
+  shippingAdress: "The office"
+  productkey: text
+  productvalue: Aoppee Phone
+  qty: 1
+
+
+TC02:
+  username: xcx@df.com       
+  password: P@ssw0rd
+  first_name: Test
+  last_name: Automate
+  phone: "0987654321"
+  shippingAdress: "Home address"
+  productkey: text
+  productvalue: Doppee phone
+  qty: 4
+
+credit_card:
+  bin: "4111111111111111"
+  payment_type: credit_card
+  expDate: 10/2025
+  cvc: "123"
+  issuingBank: SCB
+  cardHolderName: test
+
+promotion_id: null
