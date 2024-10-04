@@ -1,5 +1,7 @@
 *** Keywords ***
 Search Product With Doppee
-    search_page.Create Params With Product
-    search_page.Session Search Product
-    search_page.Collect Product
+    [Arguments]     ${user_login}
+    search_page.Create Params With Product      ${user_login}
+    search_page.Session Search Product      
+    ${product}  search_page.Collect Product
+    RETURN      ${product}

@@ -1,5 +1,5 @@
 *** Keywords ***
-Create user_login
+Create Data User
     [Arguments]     ${data}     
     ${user_login}      Create Dictionary       
     ...     username=${data.username} 
@@ -11,25 +11,19 @@ Create user_login
     ...     productkey=${data.productkey}
     ...     productvalue=${data.productvalue}
     ...     qty=${data.qty}
-    Set Global Variable           ${user_login}
     RETURN    ${user_login}
 
-Session Login Doppee 
+Session Login Doppee
+    [Arguments]     ${user_login}
     ${user}     POST On Session     doppeeSession        ${url.login}      json=${user_login}
-    Set Global Variable     ${user}
     RETURN    ${user} 
 
 Collect Token
-    ${token}    Set Variable        ${user.json()['token']} 
+    [Arguments]     ${user} 
+    ${token}    Create Dictionary        token=${user.json()['token']} 
     Set Global Variable           ${token}
-    RETURN    ${token}
 
 Collect ID
+    [Arguments]     ${user}
     ${userid}    Set Variable        ${user.json()['id']} 
     Set Global Variable           ${userid}
-    RETURN    ${userid}
-
-Create Hearder
-    ${hearder}      Create Dictionary       token=${token}
-    Set Global Variable           ${hearder}
-    RETURN    ${hearder}
