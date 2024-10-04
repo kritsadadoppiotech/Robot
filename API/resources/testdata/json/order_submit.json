@@ -1,0 +1,18 @@
+{
+    "user_id": 1,
+    "first_name": "Peter",
+    "last_name": "Peter",
+    "email": "example@example.com",
+    "phone": "0800000000",
+    "shippingAdress": "abc123",
+    "promotion_id": null,
+    "product_id": 1,
+    "product_qty": 1,
+    "original_price": 10000,
+    "bin": "4111111111111111",
+    "payment_type": "credit_card",
+    "expDate": "10/2025",
+    "cvc": "123",
+    "issuingBank": "SCB",
+    "cardHolderName": "Peter Parker"
+}
