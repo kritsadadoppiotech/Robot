@@ -1,0 +1,10 @@
+TC01:
+  id: 77      
+  name: Lenovo
+  description: Doppee
+  qty: 10
+  price: 50000
+  discount: 0
+  image_url: 
+  product_category_id: 1
+  rec_status: 1

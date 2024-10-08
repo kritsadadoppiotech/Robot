@@ -1,0 +1,3 @@
+connection_string: database='training_platform_db', user='doppio-training-user', password='Doppio123*', host='125.26.15.143', port=10004
+
+db_type: psycopg2
