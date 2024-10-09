@@ -1,0 +1,3 @@
+*** Test cases ***,${username},${password},${expect_message}
+Test 1 Login Success,xcx@df.com,P@ssw0rd,Login Success
+Test 1 Login Failed,xcx@df.com,12345,Login Failure
