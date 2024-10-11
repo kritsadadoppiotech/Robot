@@ -1,9 +1,11 @@
 *** Keywords ***
 Input Username  
+    [Arguments]     ${username}
     Wait Until Element Is Visible   ${login_locator.form_login}
     Input Text   ${login_locator.txt_username}      ${username}
 
-Input Password  
+Input Password
+    [Arguments]     ${password}
     Input Text   ${login_locator.txt_password}      ${password}
     Click Element   ${login_locator.btn_login}
 

@@ -1,11 +1,19 @@
 *** Settings ***
-Resource    ../keywords/import.robot
+Resource    ${CURDIR}/../keywords/import.robot
 Library     DataDriver      file=${CURDIR}/../resources/testdata/testdata.csv       dialect=excel
 Test Setup      common.Open doppiotech website
-Test Template   login_features.Login With Username And Password
+Test Teardown     common.Clear all browser
+Test Template   Login With Username And Password
+
+
+*** Keywords ***
+Login With Username And Password
+    [Arguments]     ${username}     ${password}     ${expect_message}
+    home_page.Click button user To Login   
+    login_page.Input Username   ${username}
+    login_page.Input Password   ${password}
+    login_page.Check Pop up Login Page
 
 *** Test Cases ***
 TC-001 Assignment with a real test case
-    log to console    ${username} ${password} ${expect_message}
-     login_features.Login With Username And Password
-
+    Login With Username And Password
